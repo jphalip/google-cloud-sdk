@@ -201,9 +201,8 @@ spark,spark-defaults.conf
       type=arg_parsers.ArgList(min_length=1),
       metavar='SCOPE',
       help="""\
-Specifies scopes for the node instances. The project's default service account
-is used. Multiple SCOPEs can specified, separated by commas.
-Examples:
+Specifies scopes for the node instances. Multiple SCOPEs can be specified,
+separated by commas. Examples:
 
   $ {{command}} example-cluster --scopes https://www.googleapis.com/auth/bigtable.admin
 
@@ -214,6 +213,7 @@ added, even if not explicitly specified:
 
 [format="csv"]
 |========
+Necessary scopes
 {minimum_scopes}
 |========
 
@@ -221,6 +221,7 @@ If this flag is not specified the following default scopes are also included:
 
 [format="csv"]
 |========
+Default scopes
 {additional_scopes}
 |========
 
